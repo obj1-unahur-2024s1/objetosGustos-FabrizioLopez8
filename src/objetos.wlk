@@ -14,6 +14,10 @@ object pardo {
 	method esFuerte() = false
 }
 
+object naranja {
+	method esFuerte() = true
+}
+
 object cobre {
 	method brilla() = true
 }
@@ -54,6 +58,7 @@ object biblioteca {
 
 object munieco {
 	var peso	
+	
 	method color() = celeste
 	method material() = vidrio
 	method peso() = peso
@@ -63,9 +68,33 @@ object munieco {
 object placaCobre {
 	var peso
 	var color	
+	
 	method color() = color
 	method setColor(colorNuevo) {color = colorNuevo}
 	method material() = vidrio
 	method peso() = peso
 	method setPeso(pesoNuevo) {peso = pesoNuevo} 
+}
+
+object arito {
+	method color() = celeste
+	method material() = cobre
+	method peso() = 180
+}
+
+object banquito {
+	var color = naranja
+	
+	method color() = color
+	method setColor(colorNuevo) {color = colorNuevo}
+	method material() = cobre
+	method peso() = 180
+}
+
+object cajita {
+	var objetoDentro
+	method color() = rojo
+	method material() = cobre
+	method peso() = 400 + objetoDentro.peso()
+	method setObjetoDentro(objetoNuevo) {objetoDentro = objetoNuevo}
 }

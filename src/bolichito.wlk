@@ -11,6 +11,6 @@ object bolichito {
 	method tieneAlgoDeColor(color) = (objetoMostrador.color() == color) || (objetoVidriera.color() == color)
 	method puedeMejorar() = self.esMonocromatico() && self.estaDesequilibrado()
 	method puedeOfrecerleAlgoA(persona) = persona.leGusta(objetoMostrador) || persona.leGusta(objetoVidriera)
-	method setObjetoMostrador(nuevoObjeto) {objetoMostrador = nuevoObjeto}
-	method setObjetoVidriera(nuevoObjeto) {objetoVidriera = nuevoObjeto}
+	method setObjetoMostrador(objetoNuevo) {objetoMostrador = objetoNuevo}
+	method setObjetoVidriera(objetoNuevo) {objetoVidriera = objetoNuevo}
 }
